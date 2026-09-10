@@ -1,7 +1,7 @@
 #include <stdio.h>
 int main(){
   int a; // DataType of the declared variable decision.
-  // There are 4 types of datatypes used mainly :- Integer(int),Decimal(float),String(char),Double{Used to store high precision data}(double)
+// There are 4 types of datatypes used mainly :- Integer(int),Decimal(float),String(char),Double{Used to store high precision data}(double)
   a=7;
   
   float b;// Float can be used till 7 digits.
