@@ -4,17 +4,6 @@ This folder contains my **C Programming fundamentals and beginner-level programs
 
 ## 🎯 Purpose
 
-The goal of this folder is to build a strong foundation in **C Programming** before moving on to more advanced concepts such as:
-
-* Basics
-* Conditional Statements
-* Loops
-* Functions
-* Arrays
-* Strings
-* Pointers
-* Structures
-* File Handling
-* Data Structures
+The goal of this folder is to build a strong foundation in **C Programming** before moving on to more advanced concepts.
 
 > This folder is part of my ongoing **C Programming learning journey**.
