@@ -1,11 +1,15 @@
 #include<stdio.h>
 int main(){
+  
   if(5>4){
     printf("IF");}
+    
   else if(3<7){
     printf("ELSE-IF");}
+    
   else{
     printf("ELSE");}
+  
   return 0;
 }
 
