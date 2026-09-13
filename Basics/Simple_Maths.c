@@ -10,6 +10,5 @@ int main() {
   
     printf("Division of 2 and 3: %d", 3/2); // In division it gives the output same as in python , integer output until float is not mentioned
     // So this will give an output "1".As it can't gie th eoutput "1.5" .
-  
     return 0;
 }
