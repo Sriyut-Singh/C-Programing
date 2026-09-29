@@ -15,6 +15,7 @@ The goal of this Repo is to build a strong foundation in **C Programming** befor
 * Pointers
 * Structures
 * File Handling
+* Patterns
 * Data Structures
 
 > This folder is part of my ongoing **C Programming learning journey**.
