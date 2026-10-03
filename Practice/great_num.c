@@ -1,6 +1,5 @@
 //Use a conditional (ternary) operator to find the greater of two numbers.
 
-
 #include <stdio.h>
  int main(){
    int a, b;
