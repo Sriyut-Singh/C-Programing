@@ -1,7 +1,5 @@
 //Demonstrate a program to compare pre-increment, post-increment.
 
-
-
 #include <stdio.h>
 int main(){
   int a = 5, b = 5;
