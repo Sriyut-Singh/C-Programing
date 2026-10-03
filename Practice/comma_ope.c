@@ -1,6 +1,4 @@
 //Create a program to demonstrate the comma operator by assigning multiple values in single line.
-
-
 #include <stdio.h>
 int main(){
   int x, y, z;
