@@ -1,88 +1,99 @@
-
-# C Programming - Basics
+# C Programming – Basics
 
 Welcome to the **Basics** section of my C Programming repository!
 
-This folder contains beginner-friendly C programs designed to build a strong foundation in the C programming language.
-
-Each program focuses on a fundamental programming concept and includes comments, explanations, and sample output to make learning easier.
+This folder contains beginner-friendly C programs covering the fundamental concepts of the C programming language. Each program focuses on a specific concept and is intended to help build a strong programming foundation.
 
 ## 📚 Topics Covered
 
-| No. | File Name | Concepts Covered |
-|:---:|---|---|
-| 1 | `variable_declaration.c` | Variables, declaration, initialization, and data types |
-| 2 | `Printing.c` | printf(), format specifiers, and escape sequences |
-| 3 | `Simple_Maths.c` | Arithmetic operators and mathematical operations |
-| 4 | `if_else_statements.c` | if, if-else, and else-if statements |
-| 5 | `Loops.c` | for, while, and do-while loops |
-| 6 | `Nested_Loop.c` | Nested loops and number patterns |
+| No. | Program | Concepts Covered |
+|---:|---|---|
+| 1 | `Printing.c` | printf(), format specifiers, escape sequences |
+| 2 | `variable_declaration.c` | Variables, data types, sizeof operator |
+| 3 | `Taking_Input.c` | User input using scanf() |
+| 4 | `Simple_Maths.c` | Arithmetic operations |
+| 5 | `Operators.c` | Arithmetic, relational and logical operators |
+| 6 | `Assignment_Operators.c` | Assignment and compound assignment operators |
+| 7 | `Increment_Decrement.c` | Pre-increment, post-increment, decrement |
+| 8 | `if_else_statements.c` | if, else if, else and conditional statements |
+| 9 | `Switch_Case.c` | switch, case, break and default |
+| 10 | `Loops.c` | for, while and do-while loops |
+| 11 | `Nested_Loop.c` | Nested loops and pattern generation |
+| 12 | `Break_Continue.c` | break and continue statements |
+| 13 | `Type_Casting.c` | Implicit and explicit type conversion |
+| 14 | `Bitwise_Operators.c` | AND, OR, XOR, NOT, left shift and right shift |
+| 15 | `Scope_and_Lifetime.c` | Global, local, block scope and static variables |
 
-## 🛠️ Requirements
+## 🛠️ Technologies Used
 
-To compile and execute these programs, you need:
+- Programming Language: C
+- Standard: C11
+- Compiler: GCC
+- Version Control: Git and GitHub
+- Automated Compilation: GitHub Actions
 
-- A C compiler such as GCC.
-- A code editor such as VS Code (optional).
-- A terminal or command prompt.
+## ▶️ How to Run
 
-## ▶️ How to Compile and Run
+To run these programs on your computer:
 
-### Step 1: Open the terminal
+1. Install a C compiler such as GCC.
+2. Download or clone this repository.
+3. Open the desired `.c` file.
+4. Compile and execute it.
 
-Navigate to the `Basics` directory:
-
-```bash
-cd Basics
-```
-
-### Step 2: Compile a C program
-
-For example, to compile `Loops.c`:
-
-```bash
-gcc -std=c11 -Wall -Wextra -Wpedantic Loops.c -o loops
-```
-
-### Step 3: Execute the program
-
-**Windows:**
+Example using GCC:
 
 ```bash
-loops.exe
+gcc -std=c11 Printing.c -o Printing
 ```
 
-**Linux / macOS:**
+Run on Windows:
+
+```powershell
+.\Printing.exe
+```
+
+Run on Linux:
 
 ```bash
-./loops
+./Printing
 ```
 
-You can follow the same process for the other C files by replacing the filename and executable name.
+## ⚙️ Automated Compilation
 
-## 💡 Learning Objectives
+This repository uses **GitHub Actions** to automatically compile the C programs in the `Basics` folder.
 
-After completing the programs in this folder, you should be able to:
+The workflow checks the programs using:
 
-- Understand variables and fundamental data types.
-- Display output using `printf()`.
-- Perform basic arithmetic operations.
-- Use conditional statements to make decisions.
-- Understand and implement different types of loops.
-- Create patterns using nested loops.
-- Compile and execute basic C programs.
+- C11 standard
+- `-Wall`
+- `-Wextra`
+- `-Wpedantic`
 
-## 🎯 Purpose
+This helps identify compilation errors and compiler warnings whenever relevant code is pushed to GitHub.
 
-The purpose of this folder is to strengthen my understanding of C programming through practical examples and hands-on coding.
+## 🎯 Learning Objectives
 
-This is part of my journey of learning programming and improving my problem-solving skills.
+- Understand the fundamentals of C programming.
+- Learn variables, data types and operators.
+- Work with conditional statements and loops.
+- Understand type conversion and bitwise operations.
+- Develop logical thinking and problem-solving skills.
+- Build a foundation for intermediate and advanced C programming.
+
+## 📌 What's Next?
+
+After completing the Basics section, the next stage of this repository will cover intermediate C programming concepts, including:
+
+- Arrays and strings
+- Functions
+- Recursion
+- Pointers
+- Structures and unions
+- Dynamic memory allocation
+- File handling
 
 ---
 
-**Language:** C  
-**Level:** Beginner  
-**Compiler:** GCC  
-**Standard:** C11
+**Learning C, one program at a time.** 💻
 
-Happy Coding! 🚀
