@@ -1,0 +1,62 @@
+
+name: Compile C Programs
+
+on:
+  push:
+    paths:
+      - 'Basics/**/*.c'
+      - '.github/workflows/compile-c.yml'
+  pull_request:
+    paths:
+      - 'Basics/**/*.c'
+      - '.github/workflows/compile-c.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  compile:
+    name: Compile Basics Programs
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Download repository
+        uses: actions/checkout@v4
+
+      - name: Check GCC version
+        run: gcc --version
+
+      - name: Compile all C programs
+        shell: bash
+        run: |
+          mkdir -p /tmp/c-build
+
+          passed=0
+          failed=0
+
+          while IFS= read -r -d '' file; do
+            name=$(basename "$file" .c)
+
+            echo ""
+            echo "Checking $file..."
+
+            if gcc -std=c11 -Wall -Wextra -Wpedantic \
+              "$file" -o "/tmp/c-build/$name"; then
+              echo "PASSED: $file"
+              ((passed+=1))
+            else
+              echo "FAILED: $file"
+              ((failed+=1))
+            fi
+
+          done < <(find Basics -type f -name '*.c' -print0)
+
+          echo ""
+          echo "========== FINAL REPORT =========="
+          echo "Passed: $passed"
+          echo "Failed: $failed"
+
+          if [ "$passed" -eq 0 ] || [ "$failed" -gt 0 ]; then
+            exit 1
+          fi
